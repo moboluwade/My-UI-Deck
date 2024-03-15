@@ -9,7 +9,7 @@ function App() {
       <div>
         <h3>Table of Contents</h3>
         <div>
-          <Link to='/notch'><p>Notch-Header </p></Link>
+          <Link to='/ui/notch'><p>Notch-Header </p></Link>
         </div>
       </div>
     </div>

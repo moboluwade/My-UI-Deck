@@ -3,16 +3,27 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import NotchHeader from './components/notch-header/NotchHeader.tsx'
+import NotchHeader from './views/notch-header/NotchHeader.tsx'
+import Views from './views/Views.tsx'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>,
+    element: <App />,
   },
   {
-    path: '/notch',
+    path: 'ui',
+    element: <Views />,
+    children: [
+      {
+        path: '/ui/notch',
+        element: <NotchHeader />
+      }
+    ]
+  },
+  {
+    path: '/ui/notch',
     element: <NotchHeader />
   }
 ])
