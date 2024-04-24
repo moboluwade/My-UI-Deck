@@ -10,6 +10,7 @@ function App() {
         <h3>Table of Contents</h3>
         <div>
           <Link to='/ui/notch'><p>Notch-Header </p></Link>
+          <Link to='/app/scroll-marquee'><p>Scroll-trigerred marquee </p></Link>
         </div>
       </div>
     </div>
